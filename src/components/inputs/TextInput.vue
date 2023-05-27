@@ -1,16 +1,23 @@
 <template>
-  <input :type="type" v-model="modelValue" />
+  <input class="text-input" type="text" v-model="modelValue" />
 </template>
 
 <script setup lang="ts">
-import type { PropType } from 'vue';
+import { computed } from 'vue';
 
-defineProps({
-  type: {
-    type: String as PropType<'text' | 'number'>,
-    default: 'text',
+const props = defineProps({
+  value: {
+    type: String,
   },
 });
+const emit = defineEmits(['input']);
 
-const modelValue = defineModel<string | number>({ default: '' });
+const modelValue = computed({
+  set(val) {
+    emit('input', val);
+  },
+  get() {
+    return props.value;
+  },
+});
 </script>
