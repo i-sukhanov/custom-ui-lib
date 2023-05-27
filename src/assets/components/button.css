@@ -1,0 +1,14 @@
+.button {
+}
+
+.button--small {
+  padding: var(--spacing-xs);
+}
+
+.button--medium {
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.button--large {
+  padding: var(--spacing-sm) var(--spacing-md);
+}
