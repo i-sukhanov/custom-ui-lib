@@ -27,6 +27,14 @@ body {
   --spacing-sm: 8px;
   --spacing-md: 16px;
 
+  --width-1: 4px;
+  --width-2: 6px;
+  --width-3: 8px;
+  --width-4: 10px;
+  --width-5: 12px;
+  --width-6: 14px;
+  --width-7: 16px;
+
   /* Red */
   --color-red-50: #ffebee;
   --color-red-100: #ffcdd2;
