@@ -16,5 +16,5 @@ const buttonClasses = computed(() => [`button-${props.size}`]);
 </script>
 
 <style scoped>
-@import '../../assets/components/button.css';
+@import '../../assets/components/buttons/button.css';
 </style>

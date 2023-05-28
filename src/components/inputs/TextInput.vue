@@ -43,5 +43,5 @@ const modelValue = computed({
 </script>
 
 <style scoped>
-@import '../../assets/components/text-input.css';
+@import '../../assets/components/inputs/text-input.css';
 </style>
