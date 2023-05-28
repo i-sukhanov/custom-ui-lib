@@ -1,14 +1,15 @@
 .button {
+  cursor: pointer;
 }
 
-.button--small {
-  padding: var(--spacing-xs);
+.button-small {
+  padding: var(--spacing-xxs) var(--spacing-xs);
 }
 
-.button--medium {
+.button-medium {
   padding: var(--spacing-xs) var(--spacing-sm);
 }
 
-.button--large {
+.button-large {
   padding: var(--spacing-sm) var(--spacing-md);
 }

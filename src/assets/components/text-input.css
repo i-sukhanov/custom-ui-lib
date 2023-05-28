@@ -1,0 +1,7 @@
+.text-input {
+}
+
+.text-input--star {
+  color: var(--color-red-600);
+  margin-left: var(--spacing-xxs);
+}

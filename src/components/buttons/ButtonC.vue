@@ -12,7 +12,7 @@ const props = defineProps({
   },
 });
 
-const buttonClasses = computed(() => [`button--${props.size}`]);
+const buttonClasses = computed(() => [`button-${props.size}`]);
 </script>
 
 <style scoped>
