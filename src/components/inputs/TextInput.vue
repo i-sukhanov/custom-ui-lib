@@ -7,7 +7,7 @@
       </label>
     </div>
     <div>
-      <input type="text" v-model="modelValue" />
+      <input type="text" v-model="modelValue" :id="id" />
     </div>
   </div>
 </template>
