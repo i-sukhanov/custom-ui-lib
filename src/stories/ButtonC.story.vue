@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import ButtonC from '../components/buttons/ButtonC.vue';
+import ButtonC from '@/components/buttons/ButtonC.vue';
 </script>

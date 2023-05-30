@@ -1,4 +1,4 @@
-import CheckboxC from '../../checkbox/CheckboxC.vue';
+import CheckboxC from '@/components/checkbox/CheckboxC.vue';
 import { mount } from '@vue/test-utils';
 import { test, describe, expect } from 'vitest';
 

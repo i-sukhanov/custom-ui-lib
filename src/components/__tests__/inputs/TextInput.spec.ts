@@ -1,4 +1,4 @@
-import TextInput from '../../inputs/TextInput.vue';
+import TextInput from '@/components/inputs/TextInput.vue';
 import { mount } from '@vue/test-utils';
 import { test, describe, expect } from 'vitest';
 

@@ -7,12 +7,13 @@
       :id="id"
       v-model="val"
     />
-    <label class="checkbox--label" :for="id">{{ label }}</label>
+    <label class="checkbox--label" :for="id"> {{ label }}</label>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import TickIcon from '@/icons/TickIcon.vue';
 
 const emit = defineEmits(['change']);
 const props = defineProps({
@@ -45,5 +46,5 @@ const val = computed({
 </script>
 
 <style scoped>
-@import '../../assets/components/checkbox/checkbox.css';
+@import '@/assets/components/checkbox/checkbox.css';
 </style>

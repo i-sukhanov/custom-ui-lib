@@ -1,4 +1,4 @@
-import ButtonC from '../../buttons/ButtonC.vue';
+import ButtonC from '@/components/buttons/ButtonC.vue';
 import { mount } from '@vue/test-utils';
 import { test, describe, expect } from 'vitest';
 
