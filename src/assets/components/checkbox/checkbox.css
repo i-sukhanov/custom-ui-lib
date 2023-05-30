@@ -26,6 +26,13 @@
   border-radius: 2px;
 }
 
-.checkbox--input:checked + .checkbox--label::before {
-  background-color: var(--color-blue-500);
+.checkbox--check {
+  position: absolute;
+  left: 1px;
+  width: var(--width-4);
+  display: none;
+}
+
+.checkbox--input:checked + .checkbox--label .checkbox--check {
+  display: initial;
 }

@@ -35,6 +35,13 @@ body {
   --width-6: 14px;
   --width-7: 16px;
 
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+
   /* Red */
   --color-red-50: #ffebee;
   --color-red-100: #ffcdd2;

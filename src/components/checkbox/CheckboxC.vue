@@ -7,7 +7,10 @@
       :id="id"
       v-model="val"
     />
-    <label class="checkbox--label" :for="id"> {{ label }}</label>
+    <label class="checkbox--label" :for="id">
+      <TickIcon class="checkbox--check" />
+      <span>{{ label }}</span>
+    </label>
   </div>
 </template>
 
