@@ -15,21 +15,12 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 
-const props = defineProps({
-  value: {
-    type: String,
-  },
-  id: {
-    type: String,
-  },
-  required: {
-    type: Boolean,
-    default: false,
-  },
-  label: {
-    type: String,
-  },
-});
+const { value, required = false } = defineProps<{
+  value: string;
+  id: string;
+  required: boolean;
+  label: string;
+}>();
 const emit = defineEmits(['input']);
 
 const modelValue = computed({
@@ -37,7 +28,7 @@ const modelValue = computed({
     emit('input', val);
   },
   get() {
-    return props.value;
+    return value;
   },
 });
 </script>

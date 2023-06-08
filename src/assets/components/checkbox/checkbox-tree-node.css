@@ -1,0 +1,6 @@
+.checkbox_tree_node {
+}
+
+.checkbox_tree_node--children {
+  padding-left: var(--spacing-md);
+}

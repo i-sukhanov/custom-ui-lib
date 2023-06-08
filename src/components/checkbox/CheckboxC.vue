@@ -3,9 +3,9 @@
     <input
       class="checkbox--input"
       type="checkbox"
-      :name="name"
-      :id="id"
       v-model="val"
+      v-bind="$attrs"
+      :id="id"
     />
     <label class="checkbox--label" :for="id">
       <TickIcon class="checkbox--check" />
@@ -19,31 +19,27 @@ import { computed } from 'vue';
 import TickIcon from '@/icons/TickIcon.vue';
 
 const emit = defineEmits(['change']);
-const props = defineProps({
-  id: {
-    type: String,
-    required: true,
-  },
-  label: {
-    type: String,
-    default: 'checkbox',
-  },
-  name: {
-    type: String,
-  },
-  value: {
-    type: [Boolean, String],
-    default: false,
-  },
+const {
+  value = false,
+  id,
+  label = 'checkbox',
+} = defineProps<{
+  id: string;
+  label: string;
+  value: boolean;
+}>();
+
+defineOptions({
+  inheritAttrs: false,
 });
 
 const val = computed({
   get() {
-    return props.value;
+    return value;
   },
 
-  set(value) {
-    emit('change', value);
+  set(v) {
+    emit('change', v);
   },
 });
 </script>
