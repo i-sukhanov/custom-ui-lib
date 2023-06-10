@@ -1,8 +1,8 @@
 export type Node = {
-  id: number;
-  checked: boolean;
-  label: string;
-  children?: Node[];
-};
+  id: number
+  checked: boolean
+  label: string
+  children?: Node[]
+}
 
-export type NodeTree = Node[];
+export type NodeTree = Node[]

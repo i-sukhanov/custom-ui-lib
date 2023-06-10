@@ -7,10 +7,7 @@
       :indeterminate="indeterminate"
       @change="handleChange"
     />
-    <div
-      class="checkbox_tree_node--children"
-      v-if="node.children && node.children.length > 0"
-    >
+    <div class="checkbox_tree_node--children" v-if="node.children && node.children.length > 0">
       <CheckboxTreeNode
         v-for="cNode in node.children"
         :key="cNode.id"
@@ -22,22 +19,22 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-import type { Node } from '@/types/checkbox';
-import CheckboxC from './CheckboxC.vue';
+import { computed } from 'vue'
+import type { Node } from '@/types/checkbox'
+import CheckboxC from './CheckboxC.vue'
 
-const emit = defineEmits(['update:node']);
-const { node } = defineProps<{ node: Node }>();
+const emit = defineEmits(['update:node'])
+const { node } = defineProps<{ node: Node }>()
 
-const indeterminate = computed(() => node?.children?.some((c) => c.checked));
+const indeterminate = computed(() => node?.children?.some((c) => c.checked))
 
 const handleChange = (value: Node['checked']) => {
-  emit('update:node', { ...node, checked: value });
-};
+  emit('update:node', { ...node, checked: value })
+}
 
 const emitChange = (node: Node) => {
-  emit('update:node', node);
-};
+  emit('update:node', node)
+}
 </script>
 
 <style scoped>

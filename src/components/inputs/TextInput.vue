@@ -13,24 +13,24 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue';
+import { computed } from 'vue'
 
 const { value, required = false } = defineProps<{
-  value: string;
-  id: string;
-  required: boolean;
-  label: string;
-}>();
-const emit = defineEmits(['input']);
+  value: string
+  id: string
+  required: boolean
+  label: string
+}>()
+const emit = defineEmits(['input'])
 
 const modelValue = computed({
   set(val) {
-    emit('input', val);
+    emit('input', val)
   },
   get() {
-    return value;
-  },
-});
+    return value
+  }
+})
 </script>
 
 <style scoped>

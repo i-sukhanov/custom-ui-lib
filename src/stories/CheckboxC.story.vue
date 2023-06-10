@@ -5,5 +5,5 @@
 </template>
 
 <script setup lang="ts">
-import CheckboxC from '@/components/checkbox/CheckboxC.vue';
+import CheckboxC from '@/components/checkbox/CheckboxC.vue'
 </script>

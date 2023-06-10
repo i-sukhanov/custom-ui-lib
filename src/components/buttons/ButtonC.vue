@@ -3,13 +3,13 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue';
+import { computed } from 'vue'
 
 const { size = 'medium' } = defineProps<{
-  size: 'small' | 'medium' | 'large';
-}>();
+  size: 'small' | 'medium' | 'large'
+}>()
 
-const buttonClasses = computed(() => [`button-${size}`]);
+const buttonClasses = computed(() => [`button-${size}`])
 </script>
 
 <style scoped>
