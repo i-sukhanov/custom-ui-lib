@@ -1,7 +1,7 @@
 <template>
   <div class="checkbox">
-    <input class="checkbox--input" type="checkbox" v-model="val" v-bind="$attrs" :id="id" />
-    <label class="checkbox--label" :for="id">
+    <input class="checkbox--input" type="checkbox" v-model="val" v-bind="$attrs" :id="String(id)" />
+    <label class="checkbox--label" :for="String(id)">
       <TickIcon class="checkbox--check" />
       <span>{{ label }}</span>
     </label>
@@ -18,9 +18,9 @@ const {
   id,
   label = 'checkbox'
 } = defineProps<{
-  id: string
-  label: string
-  value: boolean
+  id?: string | number
+  label?: string
+  value?: boolean
 }>()
 
 defineOptions({

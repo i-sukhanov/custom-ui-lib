@@ -16,10 +16,10 @@
 import { computed } from 'vue'
 
 const { value, required = false } = defineProps<{
-  value: string
-  id: string
-  required: boolean
-  label: string
+  value?: string
+  id?: string
+  required?: boolean
+  label?: string
 }>()
 const emit = defineEmits(['input'])
 

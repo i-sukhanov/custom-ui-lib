@@ -1,6 +1,6 @@
 <template>
   <Story>
-    <TextInput label="Label"></TextInput>
+    <TextInput label="Label" />
   </Story>
 </template>
 

@@ -6,7 +6,7 @@
 import { computed } from 'vue'
 
 const { size = 'medium' } = defineProps<{
-  size: 'small' | 'medium' | 'large'
+  size?: 'small' | 'medium' | 'large'
 }>()
 
 const buttonClasses = computed(() => [`button-${size}`])
