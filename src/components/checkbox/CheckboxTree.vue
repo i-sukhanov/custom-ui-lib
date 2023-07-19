@@ -13,11 +13,11 @@ import type { NodeTree, Node } from '@/types/checkbox'
 import CheckboxTreeNode from './CheckboxTreeNode.vue'
 
 const { nodeTree } = defineProps<{ nodeTree: NodeTree }>()
-const treeState = ref<NodeTree | undefined[]>(nodeTree)
+const treeState = ref<NodeTree>(nodeTree)
 const emit = defineEmits(['update:tree'])
 
 const updateTreeNode = (node: Node) => {
-  const findAndUpdateNode = (nodeList: NodeTree | undefined[]) => {
+  const findAndUpdateNode = (nodeList: NodeTree) => {
     nodeList.forEach((n) => {
       if (!n) return
 
